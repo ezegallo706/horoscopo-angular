@@ -1,0 +1,8 @@
+<div class="d-flex align-items-center mr-3">
+  <h6 class="mb-0 mr-2">Ver como</h6>
+  <select (change)="onSelect($event)">
+    <option *ngFor="let mode of modes" [value]="mode.classValue">
+      {{ mode.name }}
+    </option>
+  </select>
+</div>

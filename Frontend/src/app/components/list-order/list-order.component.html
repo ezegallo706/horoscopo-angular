@@ -1,0 +1,7 @@
+<div class="d-flex align-items-center mt-2 mt-md-0">
+ <h6 class="mb-0 mr-2">Ordenar por</h6>
+    <select name="" id="" (change)="onSelect($event)">
+        <option *ngFor="let order of orders" [value]="order.value">{{order.name}}</option>
+    </select>
+</div>
+

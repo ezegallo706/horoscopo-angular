@@ -1,0 +1,14 @@
+.main-content{
+    display: flex;
+    flex-direction: row!important;
+}
+
+/* mobile style*/
+@media only screen and (max-width: 767px) {
+    .main-content{
+        display: flex;
+        flex-direction: column!important;
+        justify-content: start!important;
+        
+    }
+}

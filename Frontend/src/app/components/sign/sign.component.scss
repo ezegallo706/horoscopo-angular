@@ -1,0 +1,21 @@
+$lightGrey: #8e8e8e;
+$darkGrey: #4e4e4e;
+$mainBckCl: #f9f9f9;
+
+.sign-card-cont {
+  min-height: 200px;
+
+  .sign-card {
+    background-color: $mainBckCl;
+    border: solid 3px $lightGrey;
+  }
+
+  .signImage {
+    max-height: 8rem;
+    filter: hue-rotate(108deg) brightness(1.1);
+  }
+
+  .sign-prediction {
+    font-size: 1.1rem;
+  }
+}

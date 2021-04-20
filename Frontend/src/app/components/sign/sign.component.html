@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="sign-card-cont col-{{classValue}} p-2" *ngFor="let sign of signs | filterBy: order">
+        <div class="p-3 sign-card h-100">
+            <div class="title-cont"
+                [ngClass]="classValue === '6' ? 'd-flex justify-content-center' : 'd-flex justify-content-start'">
+
+                <h3 class="d-inline-block">{{sign.name}}</h3>
+            </div>
+            <div class="img-cont"
+                [ngClass]="classValue === '6' ? 'd-flex justify-content-center' : 'd-flex justify-content-start'">
+                <img class="signImage" src='../../assets/images/{{sign.image}}' alt="">
+            </div>
+            <div class="sign-info mt-2">
+                <h4>Nacidos entre el {{sign.init_date}} hasta el {{sign.end_date}}</h4>
+                <p class="sign-prediction">{{sign.prediction}}</p>
+            </div>
+        </div>
+    </div>
+</div>

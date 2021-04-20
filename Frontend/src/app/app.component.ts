@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MainSignsComponent } from './components/main-signs/main-signs.component';
+
 
 @Component({
   selector: 'app-root',
